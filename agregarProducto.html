@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>GAMESTAR | Crear cuenta</title>
+	<link rel="shortcut icon" href="/multimedia/nav/GAMESTAR.png" type="image/x-icon">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="/styles/style.css">
+	<link rel="stylesheet" href="/styles/nav/nav.css">
+	<link rel="stylesheet" href="/styles/footer/footer.css">
+	<link rel="stylesheet" href="/styles/agregarProducto/agregarProducto.css">
+</head>
+
+<body>
+	<nav class="nav-flex no-margin">
+		<div>
+			<a href="index.html">
+				<img src="/multimedia/nav/GAMESTAR.png" alt="Logo">
+				<h1 class="dual-color">GAMESTAR</h1>
+			</a>
+		</div>
+		<div>
+			<form class="buscador">
+				<input class="buscar" type="search" name="buscador" id="busquedor" placeholder="¿Que desea encontrar?">
+				<input class="lupa" type="button" value="L">
+			</form>
+		</div>
+		<button><a href="/iniciarSesion.html">Iniciar Sesión</a></button>
+	</nav>
+	<main class="container">
+		<section class="centrar elegant-border">
+			<h2>Agregar Producto</h2>
+			<br>
+			<form action="./registro_concluido.html" class="formulario flex flex--column">
+				<fieldset>
+					<legend class="form__label">Ingrese los datos:</legend>
+					<br>
+					<div class="input-container">
+						<label class="input-label" for="url">URL de la imagen:</label>
+						<br>
+						<input name="url" id="url" class="input" type="url" placeholder="URL" required data-tipo="url">
+						<br>
+						<span class="input-message-error">Este campo no es valido</span>
+					</div>
+					<div class="input-container">
+						<label class="input-label" for="categoria">Categoría</label>
+						<br>
+						<input name="categoria" id="categoria" class="input" type="text" placeholder="Categoría"
+							required data-tipo="categoria">
+						<br>
+						<span class="input-message-error">Este campo no es valido</span>
+					</div>
+					<div class="input-container">
+						<label class="input-label" for="nombreP">Nombre del producto</label>
+						<br>
+						<input name="nombreP" id="nombreP" class="input" type="text" placeholder="Nombre producto"
+							required data-tipo="nombreP">
+						<br>
+						<span class="input-message-error">Este campo no es valido</span>
+					</div>
+					<div class="input-container">
+						<label class="input-label" for="precio">Precio</label>
+						<br>
+						<input name="precio" id="precio" class="input" type="number" placeholder="Precio" required
+							data-tipo="precio">
+						<br>
+						<span class="input-message-error">Este campo no es valido</span>
+					</div>
+					<div class="input-container">
+						<label class="input-label" for="precio">Descripción:</label>
+						<br>
+						<input name="descripcion" id="descripcion" class="input" type="text" placeholder="Descripción"
+							required data-tipo="descripcion">
+						<br>
+						<span class="input-message-error">Este campo no es valido</span>
+					</div>
+				</fieldset>
+				<br>
+				<button class="button">Agregar Producto</a>
+			</form>
+		</section>
+	</main>
+	<footer>
+		<div class="footer-logo">
+			<img src="/multimedia/nav/GAMESTAR.png" alt="Logo">
+			<h4 class="dual-color">GAMESTAR</h4>
+		</div>
+		<div class="footer-enlaces">
+			<h4>Quienes somos</h4>
+			<h4>Política de privacidad</h4>
+			<h4>Programas de fidelidad</h4>
+			<h4>Nuestras tiendas</h4>
+			<h4>Quiero ser franquiciado</h4>
+			<h4>Anuncie aquí</h4>
+			<div class="flex-footer">
+				<h4>&copy;Derechos reservados <br> Desarrollado por: <br> Leonardo Daniel Montes Barajas</h4>
+			</div>
+		</div>
+		<div class="footer-form">
+			<h5>Hable con nosotros</h5>
+			<legend>Datos:</legend>
+			<input type="text" placeholder="Nombre y apellido">
+			<textarea name="comentarios" id="comentarios" cols="25" rows="5"></textarea>
+			<input type="button" value="Enviar" class="btn">
+		</div>
+	</footer>
+	<script src="./js/app.js" type="module"></script>
+</body>
+
+</html>
