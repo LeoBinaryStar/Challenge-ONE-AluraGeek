@@ -1,0 +1,250 @@
+@charset "UTF-8";
+#videojuegos {
+  padding-top: 5rem;
+}
+
+.carousel-videojuegos {
+  width: 100%;
+  margin: 3.5rem auto;
+  display: flex;
+  flex-wrap: wrap;
+  transition: all 1ms;
+}
+
+.videojuegos h3 {
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+  font-size: 2.5rem;
+  color: #142534;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.videojuegos .todos {
+  display: flex;
+  width: 10rem;
+  margin-left: 85%;
+  color: #0d253d;
+  font-size: 1.35rem;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: 400;
+}
+
+.videojuegos .todos a:hover {
+  text-decoration: underline;
+}
+
+.videojuegos .flecha {
+  display: block;
+  color: #0d253d;
+  border-radius: 1rem;
+  width: 2rem;
+  font-size: 1.25rem;
+  cursor: pointer;
+  font-family: "icons";
+  background-color: transparent;
+  border: none;
+}
+
+.videojuegos h4 {
+  display: block;
+  width: 80%;
+  margin: 0.75rem auto;
+  font-size: 1.25rem;
+  color: #0d253d;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+.videojuegos p {
+  display: block;
+  width: 80%;
+  margin: 0.75rem auto;
+  font-size: 1rem;
+  color: #142534;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: 400;
+}
+
+.videojuegos .carousel {
+  width: 100%;
+  height: 29.5rem;
+  overflow: hidden;
+  display: flex;
+  margin: 2rem auto;
+  background-color: #33a0c2;
+  padding: 2rem 0;
+  border-top: 2px #0d253d solid;
+  border-bottom: 2px #0d253d solid;
+}
+
+.videojuegos .carousel-inner {
+  width: 20.25%;
+  display: flex;
+  transition: transform 0.5s ease;
+  animation: scroll 30s ease-in-out infinite;
+  -webkit-animation: scroll 30s ease-in-out infinite;
+}
+
+.videojuegos .carousel-item {
+  flex: 0 0 100%;
+  width: 4.5rem;
+  height: 28rem;
+  margin: 0.25rem;
+  border: 4px solid #0d253d;
+  border-radius: 1.1rem;
+  background-color: #B7E9F8;
+}
+
+.videojuegos .carousel-videojuegos img {
+  width: 100%;
+  height: 12rem;
+  border-radius: 0.75rem;
+  border-bottom: 5px solid #142534;
+}
+
+@keyframes scroll {
+  0%, 100% {
+    transform: translateX(0);
+    animation-timing-function: cubic-bezier(0.01, 0.01);
+  }
+  50% {
+    transform: translateX(-574%);
+    animation-timing-function: linear;
+  }
+}
+.videojuegos .carousel-item:hover {
+  animation: all;
+  animation-play-state: paused;
+  /* Pausar la animación al hacer hover */
+}
+
+@media (max-width: 1200px) {
+  .videojuegos .carousel-item {
+    overflow: scroll;
+    padding-bottom: 0.5rem;
+  }
+}
+@media (max-width: 950px) {
+  .videojuegos .todos {
+    margin-left: 80%;
+  }
+}
+@media (max-width: 900px) {
+  .videojuegos .carousel-inner {
+    width: 25%;
+  }
+  @keyframes scroll {
+    0%, 100% {
+      transform: translateX(0);
+      animation-timing-function: cubic-bezier(0.01, 0.01);
+    }
+    50% {
+      transform: translateX(-675%);
+      animation-timing-function: linear;
+    }
+  }
+}
+@media (max-width: 750px) {
+  .videojuegos .carousel-inner {
+    width: 35%;
+  }
+  .videojuegos .todos {
+    margin-left: 75%;
+  }
+  @keyframes scroll {
+    0%, 100% {
+      transform: translateX(0);
+      animation-timing-function: cubic-bezier(0.01, 0.01);
+    }
+    50% {
+      transform: translateX(-780.5%);
+      animation-timing-function: linear;
+    }
+  }
+}
+@media (max-width: 600px) {
+  .videojuegos .carousel-inner {
+    width: 45%;
+  }
+  .videojuegos .todos {
+    margin-left: 70%;
+  }
+  @keyframes scroll {
+    0%, 100% {
+      transform: translateX(0);
+      animation-timing-function: cubic-bezier(0.01, 0.01);
+    }
+    50% {
+      transform: translateX(-855%);
+      animation-timing-function: linear;
+    }
+  }
+}
+@media (max-width: 500px) {
+  .videojuegos .carousel-inner {
+    width: 65%;
+  }
+  .videojuegos .todos {
+    margin-left: 67.5%;
+  }
+  @keyframes scroll {
+    0%, 100% {
+      transform: translateX(0);
+      animation-timing-function: cubic-bezier(0.01, 0.01);
+    }
+    50% {
+      transform: translateX(-910%);
+      animation-timing-function: linear;
+    }
+  }
+}
+@media (max-width: 435px) {
+  .videojuegos .todos {
+    margin-top: 1rem;
+    margin-bottom: -1rem;
+    margin-left: 65%;
+  }
+}
+@media (max-width: 400px) {
+  .videojuegos .todos {
+    margin-top: 2rem;
+    margin-bottom: -1rem;
+    margin-left: 60%;
+  }
+}
+@media (max-width: 350px) {
+  .videojuegos .carousel-inner {
+    width: 95%;
+  }
+  .videojuegos .todos {
+    margin-left: 55%;
+  }
+  @keyframes scroll {
+    0%, 100% {
+      transform: translateX(0);
+      animation-timing-function: cubic-bezier(0.01, 0.01);
+    }
+    50% {
+      transform: translateX(-950%);
+      animation-timing-function: linear;
+    }
+  }
+  .videojuegos .carousel-inner {
+    animation: scroll 60s ease-in-out infinite;
+    -webkit-animation: scroll 60s ease-in-out infinite;
+  }
+}
+@media (max-width: 350px) {
+  .videojuegos .todos {
+    margin-left: 45%;
+  }
+}
+@media (max-width: 300px) {
+  .videojuegos h3 {
+    font-size: 2rem;
+    margin-left: 3%;
+  }
+  .videojuegos .todos {
+    margin-left: 35%;
+  }
+}/*# sourceMappingURL=videojuegos.css.map */

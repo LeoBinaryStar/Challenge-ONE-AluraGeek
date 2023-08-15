@@ -1,0 +1,147 @@
+.nav-flex {
+  margin: -5rem 0;
+  display: flex;
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  height: 3.5rem;
+  background-color: #142534;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0.25rem 0;
+}
+
+.nav-flex div {
+  display: flex;
+}
+
+.nav-flex input {
+  width: 30rem;
+  height: 2.1rem;
+  border-radius: 1rem;
+  border: 0.125rem solid #2222cc;
+  text-align: center;
+  font-size: 1.1rem;
+  box-shadow: 0 0 2px #ccc inset;
+  background-color: white;
+  color: gray;
+  transition: all 100ms;
+}
+
+.nav-flex input:focus {
+  border: 0.2rem solid #2222cc;
+  outline: none;
+}
+
+.nav-flex a {
+  display: flex;
+}
+
+.nav-flex img {
+  width: 3rem;
+  border-radius: 5rem;
+  margin-right: 0.3rem;
+}
+
+.nav-flex button {
+  height: 2rem;
+  width: 6rem;
+  border: 0.005rem solid #2222cc;
+  border-radius: 0.55rem;
+  background-color: #eeeeff;
+  color: #142534;
+}
+
+.nav-flex a {
+  text-align: center;
+}
+
+.dual-color {
+  align-self: center;
+  font-size: 1.65rem;
+  font-weight: 600;
+  background: linear-gradient(to right, #2222cc 55%, #ff0088 45%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.buscador {
+  display: flex;
+}
+
+.nav-flex .lupa {
+  display: block;
+  border-radius: 1rem;
+  border: 1px solid #2222cc;
+  width: 3.25rem;
+  color: white;
+  background-color: #142534;
+  cursor: pointer;
+  margin-left: -3rem;
+}
+
+input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover, button:hover {
+  box-shadow: 0 0 2px gray;
+}
+
+input[type=button]:active, input[type=submit]:active, input[type=reset]:active, button:active {
+  box-shadow: 0 0 3px gray inset;
+  text-shadow: 0 0 1px #ccc;
+}
+
+.lupa {
+  font-family: "icons";
+  float: left;
+}
+
+@media (max-width: 850px) {
+  .nav-flex input {
+    width: 20rem;
+  }
+}
+@media (max-width: 670px) {
+  .nav-flex input {
+    width: 15rem;
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 600px) {
+  .nav-flex input {
+    width: 15rem;
+    font-size: 0.9rem;
+  }
+  .nav-flex img {
+    width: 2rem;
+    border-radius: 5rem;
+    margin-right: 0.3rem;
+  }
+  .nav-flex h1 {
+    font-size: 1.25rem;
+  }
+}
+@media (max-width: 520px) {
+  .nav-flex input {
+    width: 15rem;
+    font-size: 0.9rem;
+  }
+  .nav-flex img {
+    width: 3rem;
+    border-radius: 5rem;
+    margin-right: 0.3rem;
+  }
+  .nav-flex h1 {
+    font-size: 1.5rem;
+  }
+  .nav-flex {
+    flex-direction: column;
+    height: 9rem;
+    margin-top: -10rem;
+  }
+}
+@media (max-width: 250px) {
+  .nav-flex input {
+    width: 13rem;
+    font-size: 0.75rem;
+  }
+}/*# sourceMappingURL=nav.css.map */

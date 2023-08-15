@@ -1,0 +1,184 @@
+.carousel-franquicias {
+  width: 100%;
+  margin: 3.5rem auto;
+  display: flex;
+  flex-wrap: wrap;
+  transition: all 1ms;
+  border: 5px solid #070825;
+  border-radius: 2.5rem;
+}
+
+.franquicias > h3 {
+  display: block;
+  width: 95%;
+  margin: 0.5rem auto;
+  font-size: 2.5rem;
+  color: #070825;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.franquicias p {
+  display: block;
+  width: 80%;
+  margin: 0.75rem auto;
+  font-size: 1rem;
+  color: #142534;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: 400;
+}
+
+.carousel-franquicias {
+  font-family: sans-serif;
+  margin: auto;
+  background-color: #6ab1c7;
+  max-width: 800px;
+  width: 100%;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+.carousel-franquicias > ul,
+li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.carousel-franquicias > ul.slider {
+  position: relative;
+  max-width: 50rem;
+  width: 100%;
+  height: 300px;
+}
+
+.carousel-franquicias > ul.slider li {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  opacity: 0;
+  width: inherit;
+  height: inherit;
+  transition: opacity 0.5s;
+}
+
+.carousel-franquicias div {
+  width: 100%;
+}
+
+.carousel-franquicias img {
+  width: 100%;
+  height: 18.75rem;
+  border-radius: 2rem;
+}
+
+.carousel-franquicias > ul.slider li:first-child {
+  opacity: 1;
+  /*Mostramos el primer <li>*/
+}
+
+.carousel-franquicias > ul.slider li:target {
+  opacity: 1;
+  /*Mostramos el <li> del enlace que pulsemos*/
+}
+
+.carousel-franquicias > .menu {
+  text-align: center;
+  margin: 20px;
+}
+
+.carousel-franquicias > .menu li {
+  display: inline-block;
+  text-align: center;
+}
+
+.carousel-franquicias > .menu li a {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  background-color: #142534;
+  padding: 10px;
+  width: 20px;
+  height: 20px;
+  font-size: 20px;
+  border-radius: 100%;
+}
+
+@media (max-width: 820px) {
+  .carousel-franquicias {
+    width: 80%;
+  }
+}
+@media (max-width: 500px) {
+  .carousel-franquicias img {
+    height: 13rem;
+  }
+  .carousel-franquicias > ul.slider {
+    height: 200px;
+  }
+}
+@media (max-width: 410px) {
+  .carousel-franquicias > .menu li a {
+    width: 1rem;
+    height: 1rem;
+  }
+  .carousel-franquicias img {
+    height: 10rem;
+  }
+  .carousel-franquicias > ul.slider {
+    height: 160px;
+  }
+}
+@media (max-width: 384px) {
+  .carousel-franquicias {
+    padding: 15px;
+  }
+  .franquicias > h3 {
+    font-size: 2rem;
+  }
+  .carousel-franquicias > .menu {
+    margin: 20px;
+  }
+}
+@media (max-width: 360px) {
+  .carousel-franquicias > .menu {
+    margin: 15px 45px 0 45px;
+  }
+}
+@media (max-width: 330px) {
+  .franquicias > h3 {
+    font-size: 1.75rem;
+  }
+  .carousel-franquicias img {
+    height: 8rem;
+  }
+  .carousel-franquicias > .menu {
+    margin: 30px 35px 0 35px;
+  }
+  .carousel-franquicias > ul.slider {
+    height: 110px;
+  }
+}
+@media (max-width: 300px) {
+  .franquicias > h3 {
+    font-size: 1.75rem;
+  }
+  .carousel-franquicias > .menu {
+    margin: 30px 25px 0 25px;
+  }
+}
+@media (max-width: 280px) {
+  .franquicias > h3 {
+    font-size: 1.6rem;
+  }
+}
+@media (max-width: 260px) {
+  .franquicias > h3 {
+    font-size: 1.55rem;
+  }
+  .carousel-franquicias > .menu {
+    margin: 30px 10px 0 10px;
+  }
+  .carousel-franquicias img {
+    height: 7.5rem;
+  }
+}/*# sourceMappingURL=franquicias.css.map */

@@ -1,0 +1,81 @@
+.popular {
+  width: 80%;
+  margin: 3.5rem auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.popular > h3 {
+  display: block;
+  width: 100%;
+  font-size: 2.5rem;
+  color: #142534;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.carousel {
+  width: 32.75%;
+  overflow: hidden;
+  display: flex;
+  margin: 2rem auto;
+}
+
+.carousel-inner {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.carousel-item {
+  flex: 0 0 100%;
+  width: 100%;
+  height: 12rem;
+}
+
+.carousel-productos .carousel-item {
+  flex: 0 0 100%;
+  width: 100%;
+  height: 12rem;
+}
+
+.popular .carousel-productos img {
+  width: 100%;
+  height: 12rem;
+  border-radius: 2rem;
+}
+
+.popular img {
+  width: 100%;
+  height: 12rem;
+  border-radius: 2rem;
+}
+
+@media (max-width: 800px) {
+  .carousel {
+    width: 45%;
+  }
+}
+@media (max-width: 600px) {
+  .carousel {
+    width: 85%;
+  }
+}
+@media (max-width: 400px) {
+  .carousel {
+    width: 100%;
+  }
+}
+@media (max-width: 400px) {
+  .carousel {
+    width: 100%;
+  }
+}
+@media (max-width: 300px) {
+  .carousel {
+    margin-bottom: 0.2rem;
+  }
+}
+@media (max-width: 260px) {
+  .carousel {
+    margin-bottom: -1rem;
+  }
+}/*# sourceMappingURL=popular.css.map */

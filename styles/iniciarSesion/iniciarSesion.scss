@@ -1,0 +1,112 @@
+$azul-medianoche: #191970;
+$azul-claro: #1496C6;
+$bg-form: #f0f8ff;
+$font-h2: #000b29;
+$font-form: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+$font-form-t:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+.container{
+	width: 100%;
+	height: 75%;
+	margin: 5rem auto;
+	display: flex;
+	align-content: center;
+	justify-content: center;
+}
+
+.centrar{
+	display: flex;
+	flex-direction: column;
+	margin-top: 5rem;
+	padding: 1.75rem;
+	background-color: $bg-form;
+	height: 65%;
+}
+
+.elegant-border {
+  border: 5px solid $azul-medianoche; /* Primer borde (azul) */
+  border-radius: 8px; /* Bordes redondeados */
+  background-color: $bg-form; /* Color de fondo (azul claro) */
+  box-shadow: 0 0 0 4px $azul-claro, 0 0 0 10px $azul-medianoche; /* Segundo y tercer borde (verde y azul) */
+}
+
+.container h2{
+	margin: 1rem auto;
+	align-content: center;
+	justify-content: center;
+	font-size: 2.5rem;
+	font-family: $font-form;
+	color: $font-h2;
+}
+
+.container form{
+	text-align: center;
+	font-family: $font-form;
+	font-size: 1.02rem;
+}
+
+.container input{
+	height: 1rem;
+	margin-top: 0.15rem;
+}
+
+.container legend{
+	margin-bottom: 1rem;
+}
+
+.container legend, .container label{
+	font-weight: 700;
+	color: $azul-medianoche;
+	font-family: $font-form-t;
+}
+
+.container .button{
+	padding: 0.4rem;
+	margin-top: 2rem;
+	font-size: 1.15rem;
+	background-color: $azul-medianoche;
+	color: $bg-form;
+	border-radius: 0.5rem;
+	border: 2px solid $azul-claro;
+}
+
+.input-message-error{
+	display: none;
+	color: #FF0088;
+	font-size: 1.1rem;
+}
+
+@media (max-width: 315px) {
+	.elegant-border {
+  width: 60%;
+}
+.container h2{
+	font-size: 1.75rem;
+}
+.container input{
+	width: 90%;
+}
+}
+
+@media (max-width: 250px) {
+.container h2{
+	font-size: 1.6rem;
+}
+}
+
+@media (max-width: 230px) {
+.container h2{
+	font-size: 1.25rem;
+}
+}
+
+@media (max-width: 178px) {
+.container h2{
+	font-size: 1rem;
+	font-weight: 600;
+}
+.container legend{
+	font-size: 1rem;
+	font-weight: 600;
+}
+}

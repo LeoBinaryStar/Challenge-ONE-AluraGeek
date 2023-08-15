@@ -1,0 +1,274 @@
+$texto: #142534;
+$h4: #0d253d;
+$bg-carousel: #33a0c2;
+$font-titulo: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+$font-h4: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+$todos: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+$bg-inner: #B7E9F8;
+
+#videojuegos{
+	padding-top: 5rem;
+}
+
+.carousel-videojuegos{
+	width: 100%;
+	margin: 3.5rem auto;
+	display: flex;
+	flex-wrap: wrap;
+	transition: all 1ms;
+}
+
+.videojuegos h3{
+	display: block;
+	width: 80%;
+	margin: 0 auto;
+	font-size: 2.5rem;
+	color: $texto;
+	font-family: $font-titulo;
+}
+
+.videojuegos .todos{
+	display: flex;
+	width: 10rem;
+	margin-left: 85%;
+	color: $h4;
+	font-size: 1.35rem;
+	font-family: $todos;
+	font-weight: 400;
+}
+
+.videojuegos .todos a:hover{
+	text-decoration: underline;
+}
+
+.videojuegos .flecha{
+	display: block;
+	color: $h4;
+	border-radius: 1rem;
+	width: 2rem;
+	font-size: 1.25rem;
+	cursor: pointer;
+	font-family: "icons";
+	background-color: transparent;
+	border: none;
+}
+
+
+.videojuegos h4{
+	display: block;
+	width: 80%;
+	margin: 0.75rem auto;
+	font-size: 1.25rem;
+	color: $h4;
+	font-family: $font-h4;
+}
+
+.videojuegos p{
+	display: block;
+	width: 80%;
+	margin: 0.75rem auto;
+	font-size: 1rem;
+	color: $texto;
+	font-family: $font-titulo;
+	font-weight: 400;
+}
+
+.videojuegos .carousel {
+	width: 100%;
+	height: calc(28rem + 1.5rem);
+	overflow: hidden;
+	display: flex;
+	margin: 2rem auto;
+	background-color: $bg-carousel;
+	padding: 2rem 0;
+	border-top: 2px $h4 solid;
+	border-bottom: 2px $h4 solid;
+}
+
+.videojuegos .carousel-inner {
+	width: 20.25%;
+	display: flex;
+	transition: transform 0.5s ease;
+	animation: scroll 30s ease-in-out infinite;
+	-webkit-animation: scroll 30s ease-in-out infinite;
+}
+
+.videojuegos .carousel-item {
+	flex: 0 0 100%;
+	width: 4.5rem;
+	height: 28rem;
+	margin: 0.25rem;
+	border: 4px solid $h4;
+	border-radius: 1.1rem;
+	background-color: $bg-inner;
+}
+
+.videojuegos .carousel-videojuegos img {
+	width: 100%;
+	height: 12rem;
+	border-radius: 0.75rem;
+	border-bottom: 5px solid $texto;
+}
+
+@keyframes scroll {
+	0%, 100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+	animation-timing-function: cubic-bezier(0.01, 0.01);
+	}
+	50% {
+    -webkit-transform: translateX(calc(-20.5% * 28));
+    transform: translateX(calc(-20.5% * 28));
+    animation-timing-function: linear;
+	}
+}
+
+.videojuegos .carousel-item:hover {
+	animation: all;
+  animation-play-state: paused;
+  /* Pausar la animación al hacer hover */
+}
+
+@media (max-width: 1200px) {
+  .videojuegos .carousel-item {
+	overflow: scroll;
+	padding-bottom: 0.5rem;
+}
+}
+@media (max-width: 950px) {
+.videojuegos .todos{
+	margin-left: 80%;
+}
+}
+@media (max-width: 900px) {
+  .videojuegos .carousel-inner {
+	width: 25%;
+}
+@keyframes scroll {
+	0%, 100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+	animation-timing-function: cubic-bezier(0.01, 0.01);
+	}
+	50% {
+    -webkit-transform: translateX(calc(-25% * 27));
+    transform: translateX(calc(-25% * 27));
+    animation-timing-function: linear;
+	}
+}
+}
+
+@media (max-width: 750px) {
+  .videojuegos .carousel-inner {
+	width: 35%;
+}
+.videojuegos .todos{
+	margin-left: 75%;
+}
+@keyframes scroll {
+	0%, 100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+	animation-timing-function: cubic-bezier(0.01, 0.01);
+	}
+	50% {
+    -webkit-transform: translateX(calc(-35% * 22.3));
+    transform: translateX(calc(-35% * 22.3));
+    animation-timing-function: linear;
+	}
+}
+}
+
+@media (max-width: 600px) {
+  .videojuegos .carousel-inner {
+	width: 45%;
+}
+.videojuegos .todos{
+	margin-left: 70%;
+}
+@keyframes scroll {
+	0%, 100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+	animation-timing-function: cubic-bezier(0.01, 0.01);
+	}
+	50% {
+    -webkit-transform: translateX(calc(-45% * 19));
+    transform: translateX(calc(-45% * 19));
+    animation-timing-function: linear;
+	}
+}
+}
+
+@media (max-width: 500px) {
+  .videojuegos .carousel-inner {
+	width: 65%;
+}
+.videojuegos .todos{
+	margin-left: 67.5%;
+}
+@keyframes scroll {
+	0%, 100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+	animation-timing-function: cubic-bezier(0.01, 0.01);
+	}
+	50% {
+    -webkit-transform: translateX(calc(-65% * 14));
+    transform: translateX(calc(-65% * 14));
+    animation-timing-function: linear;
+	}
+}
+}
+@media (max-width:435px) {
+	.videojuegos .todos{
+		margin-top: 1rem;
+		margin-bottom: -1rem;
+		margin-left: 65%;
+}
+}
+@media (max-width:400px) {
+	.videojuegos .todos{
+		margin-top: 2rem;
+		margin-bottom: -1rem;
+		margin-left: 60%;
+}
+}
+@media (max-width: 350px) {
+  .videojuegos .carousel-inner {
+	width: 95%;
+}
+.videojuegos .todos{
+		margin-left: 55%;
+}
+@keyframes scroll {
+	0%, 100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+	animation-timing-function: cubic-bezier(0.01, 0.01);
+	}
+	50% {
+    -webkit-transform: translateX(calc(-95% * 10));
+    transform: translateX(calc(-95% * 10));
+    animation-timing-function: linear;
+	}
+}
+.videojuegos .carousel-inner {
+	animation: scroll 60s ease-in-out infinite;
+	-webkit-animation: scroll 60s ease-in-out infinite;
+}
+}
+@media (max-width: 350px) {
+  .videojuegos .todos{
+		margin-left: 45%;
+}
+}
+@media (max-width: 300px) {
+	.videojuegos h3{
+	font-size: 2rem;
+	margin-left: 3%;
+}
+  .videojuegos .todos{
+		margin-left: 35%;
+}
+}

@@ -1,0 +1,142 @@
+.container {
+  width: 100%;
+  height: 95%;
+  margin: 5rem auto;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.centrar {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5rem;
+  padding: 1.75rem 10rem 1.75rem 2rem;
+  background-color: #f0f8ff;
+  height: 65%;
+}
+
+.elegant-border {
+  border: 5px solid #191970; /* Primer borde (azul) */
+  border-radius: 8px; /* Bordes redondeados */
+  background-color: #f0f8ff; /* Color de fondo (azul claro) */
+  box-shadow: 0 0 0 4px #1496C6, 0 0 0 10px #191970; /* Segundo y tercer borde (verde y azul) */
+}
+
+.container h2 {
+  margin: 1rem auto;
+  align-content: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: #000b29;
+}
+
+.container form {
+  text-align: left;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 1.02rem;
+}
+
+.container legend, .container input {
+  margin-top: 0.3rem;
+  margin-bottom: 0.35rem;
+  width: 125%;
+  height: 1rem;
+}
+
+.container legend, .container label {
+  font-weight: 700;
+  color: #191970;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.container .button {
+  padding: 0.4rem;
+  margin-top: 0.2rem;
+  margin-left: 45%;
+  font-size: 1.15rem;
+  background-color: #191970;
+  color: #f0f8ff;
+  border-radius: 0.5rem;
+  border: 2px solid #1496C6;
+}
+
+.container .button:hover {
+  box-shadow: 0px 4px 6px #1496C6;
+}
+
+.input-message-error {
+  display: none;
+  color: #FF0088;
+  font-size: 1.1rem;
+}
+
+@media (max-width: 520px) {
+  .centrar {
+    padding: 1rem 8rem 5rem 2rem;
+  }
+  .container {
+    width: 80%;
+  }
+  .container h2 {
+    width: 150%;
+    margin: 1rem auto;
+  }
+}
+@media (max-width: 455px) {
+  .centrar {
+    align-content: center;
+    justify-content: center;
+  }
+  .container {
+    width: 90%;
+  }
+}
+@media (max-width: 404px) {
+  .container h2 {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 360px) {
+  .container h2 {
+    width: 200%;
+    margin-top: 3rem;
+  }
+}
+@media (max-width: 320px) {
+  .container h2 {
+    font-size: 1.6rem;
+  }
+  .centrar {
+    padding: 1rem 6rem 5rem 2rem;
+  }
+  .container {
+    width: 70%;
+  }
+}
+@media (max-width: 270px) {
+  .container h2 {
+    font-size: 1.3rem;
+  }
+  .centrar {
+    padding: 1rem 3rem 5rem 0.5rem;
+  }
+  .container {
+    width: 60%;
+  }
+}
+@media (max-width: 250px) {
+  .container h2 {
+    font-size: 1.3rem;
+  }
+  .centrar {
+    padding: 1rem 1rem 5rem 0.5rem;
+  }
+  .container {
+    width: 80%;
+  }
+  .container legend, .container input {
+    width: 75%;
+  }
+}/*# sourceMappingURL=agregarProducto.css.map */
