@@ -1,0 +1,22 @@
+{
+	"name": "admin",
+	"version": "1.0.0",
+	"description": "AluraGeek",
+	"main": "index.html",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/LeoBinaryStar/Challenge-ONE-AluraGeek"
+	},
+	"keywords": [
+		"Alura"
+	],
+	"author": "Leonardo Montes",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/LeoBinaryStar/Challenge-ONE-AluraGeek/issues"
+	},
+	"homepage": "https://github.com/LeoBinaryStar/Challenge-ONE-AluraGeek/blob/main/README.md"
+}

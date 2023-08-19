@@ -34,32 +34,32 @@
 		<section class="centrar elegant-border">
 			<h2>Iniciar Sesión</h2>
 			<br>
-			<form action="registro_concluido.html" class="formulario flex flex--column">
+			<form action="agregarProducto.html" class="formulario flex flex--column">
 				<fieldset class="fieldset">
 					<legend class="form__label">Ingrese los datos:</legend>
 					<br>
 					<div class="input-container">
 						<label class="input-label" for="email">Email</label>
 						<br>
-						<input name="email" id="email" class="input" type="email" placeholder="Email" required
-							data-tipo="email">
+						<input name="email" id="email" class="input" type="email" placeholder="email" required
+							data-email />
 						<br>
-						<span class="input-message-error">Este campo no es valido</span>
 					</div>
 					<br>
 					<div class="input-container">
 						<label class="input-label" for="password">Contraseña</label>
 						<br>
 						<input name="password" id="password" class="input" type="password" placeholder="Contraseña"
-							required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?!.*[ !@#$%^&*_=+-]).{6,12}$"
-							title="Al menos 6 caracteres, máximo 12, debe contener una letra minúscula, una letra mayúscula, un número y no puede contener caracteres especiales."
+							required
+							pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@#$%^&+=!_])[A-Za-z\d@#$%^&+=!_]{6,12}$"
+							title="Al menos 6 caracteres, máximo 12, debe contener una letra minúscula, una letra mayúscula, un número y un caracteres especiales."
 							data-tipo="password">
 						<br>
-						<span class="input-message-error">Este campo no es valido</span>
 					</div>
 				</fieldset>
 				<br>
-				<button class="button">Registrar</a>
+				<button class="button">Ingresar</a></button>
+				<button class="button"><a href="registro.html">Registrate</a></button>
 			</form>
 		</section>
 	</main>
@@ -81,13 +81,18 @@
 		</div>
 		<div class="footer-form">
 			<h5>Hable con nosotros</h5>
-			<legend>Datos:</legend>
-			<input type="text" placeholder="Nombre y apellido">
-			<textarea name="comentarios" id="comentarios" cols="25" rows="5"></textarea>
-			<input type="button" value="Enviar" class="btn">
+			<form action="">
+				<legend>Datos:</legend>
+				<input data-tipo="input-pie" type="text" placeholder="Nombre y apellido" required minlength="1"
+					maxlength="40">
+				<textarea data-tipo="textoA-pie" name="comentarios" id="comentarios" cols="25" rows="5"
+					placeholder="Escribe tu mensaje" required minlength="1" maxlength="120"></textarea>
+				<button class="btn" id="btn-pie">Enviar</button>
+				<p class="enviado">Completa los campos :D</p>
+			</form>
 		</div>
 	</footer>
-	<script src="js/app.js" type="module"></script>
+	<script src="funciones/validacion-rodapie.js" type="module"></script>
 </body>
 
 </html>

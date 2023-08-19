@@ -69,6 +69,11 @@
   font-size: 1.1rem;
 }
 
+@media (max-width: 520px) {
+  .container {
+    margin: 10rem auto;
+  }
+}
 @media (max-width: 315px) {
   .elegant-border {
     width: 60%;

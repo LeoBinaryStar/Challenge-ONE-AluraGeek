@@ -280,13 +280,19 @@
 		</div>
 		<div class="footer-form">
 			<h5>Hable con nosotros</h5>
-			<legend>Datos:</legend>
-			<input type="text" placeholder="Nombre y apellido">
-			<textarea name="comentarios" id="comentarios" cols="25" rows="5"></textarea>
-			<input type="button" value="Enviar" class="btn">
+			<form action="">
+				<legend>Datos:</legend>
+				<input data-tipo="input-pie" type="text" placeholder="Nombre y apellido" required minlength="1"
+					maxlength="40">
+				<textarea data-tipo="textoA-pie" name="comentarios" id="comentarios" cols="25" rows="5"
+					placeholder="Escribe tu mensaje" required minlength="1" maxlength="120"></textarea>
+				<button class="btn" id="btn-pie">Enviar</button>
+				<p class="enviado">Completa los campos :D</p>
+			</form>
 		</div>
 	</footer>
-	<script src="funciones/main.js"></script>
+	<script src=" js/app.js" type="module"></script>
+	<script src="funciones/validacion-rodapie.js" type="module"></script>
 </body>
 
 </html>
